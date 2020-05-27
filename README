@@ -1,4 +1,0 @@
-# Center-FSAF-NMS
-    在CenterNet的基础上加入了FSAF（Feature-Selective-Anchor-Free-Module-for-Single-Shot-Object-Detection）的思想，并且在输出检测结果之前用了NMS来过滤。
-    将batch中的每个object拆分开，在loss最小的特征图上进行梯度回传。
-    在VOC2007上做了实验，整体的AP相比原始的CenterNet有下降。没有对参数进行调优。
