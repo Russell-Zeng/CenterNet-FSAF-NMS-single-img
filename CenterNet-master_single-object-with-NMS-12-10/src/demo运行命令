@@ -1,8 +1,0 @@
-1. python demo.py --load_model /home/xidian/zy/CenterNet-master/exp/ctdet/coco_dla/model_best.pth --demo /media/zy/img
-
-
-2. python demo.py --load_model /home/xidian/zy/CenterNet-master/exp/ctdet/coco_dla/model_best.pth --demo /media/zy/img/00001.jpg
-
-/home/xidian/zy/CenterNet-master/exp/ctdet/coco_dla/model_best.pth
-
-python demo.py --demo /media/zy/img/00001.jpg
