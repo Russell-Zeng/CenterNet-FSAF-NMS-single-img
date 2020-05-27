@@ -1,0 +1,74 @@
+dla34模型测试结果：
+
+/home/zy/anaconda3/envs/open-mmlab/bin/python /home/zy/zy/CenterNet-master/src/main.py
+Fix size testing.
+training chunk_sizes: [8]
+The output will be saved to  /home/zy/zy/CenterNet-master/exp/ctdet/coco_dla
+heads {'hm': 20, 'wh': 2, 'reg': 2}
+Namespace(K=100, aggr_weight=0.0, agnostic_ex=False, arch='dla_34', aug_ddd=0.5, aug_rot=0, batch_size=8, cat_spec_wh=False, center_thresh=0.1, chunk_sizes=[8], data_dir='/home/zy/zy/CenterNet-master/data', dataset='coco', debug=0, debug_dir='/home/zy/zy/CenterNet-master/exp/ctdet/coco_dla/debug', debugger_theme='white', demo='', dense_hp=False, dense_wh=False, dep_weight=1, dim_weight=1, down_ratio=4, eval_oracle_dep=False, eval_oracle_hm=False, eval_oracle_hmhp=False, eval_oracle_hp_offset=False, eval_oracle_kps=False, eval_oracle_offset=False, eval_oracle_wh=False, exp_dir='/home/zy/zy/CenterNet-master/exp/ctdet', exp_id='coco_dla', fix_res=True, flip=0.5, flip_test=False, gpus=[0], gpus_str='0', head_conv=256, heads={'hm': 20, 'wh': 2, 'reg': 2}, hide_data_time=False, hm_hp=True, hm_hp_weight=1, hm_weight=1, hp_weight=1, input_h=512, input_res=512, input_w=512, keep_res=False, kitti_split='3dop', load_model='/home/zy/zy/CenterNet-master/exp/ctdet/coco_dla/model_best.pth', lr=6.25e-05, lr_step=[45, 60], master_batch_size=8, mean=array([[[0.40789655, 0.44719303, 0.47026116]]], dtype=float32), metric='loss', mse_loss=False, nms=False, no_color_aug=False, norm_wh=False, not_cuda_benchmark=False, not_hm_hp=False, not_prefetch_test=False, not_rand_crop=False, not_reg_bbox=False, not_reg_hp_offset=False, not_reg_offset=False, num_classes=20, num_epochs=70, num_iters=-1, num_stacks=1, num_workers=4, off_weight=1, output_h=128, output_res=128, output_w=128, pad=31, peak_thresh=0.2, print_iter=1, rect_mask=False, reg_bbox=True, reg_hp_offset=True, reg_loss='l1', reg_offset=True, resume=False, root_dir='/home/zy/zy/CenterNet-master', rot_weight=1, rotate=0, save_all=False, save_dir='/home/zy/zy/CenterNet-master/exp/ctdet/coco_dla', scale=0.4, scores_thresh=0.1, seed=317, shift=0.1, std=array([[[0.2886383 , 0.27408165, 0.27809834]]], dtype=float32), task='ctdet', test=True, test_scales=[1.0], trainval=False, val_intervals=5, vis_thresh=0.1, wh_weight=0.1)
+Creating model...
+loaded /home/zy/zy/CenterNet-master/exp/ctdet/coco_dla/model_best.pth, epoch 70
+Setting up data...
+==> initializing coco 2017 val data.
+loading annotations into memory...
+Done (t=0.11s)
+creating index...
+index created!
+Loaded val 4952 samples
+ctdet/coco_dla| val: [0][0/4952]|Tot: 0:00:01 |ETA: 0:00:00 |loss 4.2507 |hm_loss 3.4138 |wh_loss 6.7880 |off_loss 0.1581 |Data 0.115s(0.115s) |Net 1.340s
+/home/zy/anaconda3/envs/open-mmlab/lib/python3.7/site-packages/torch/nn/_reduction.py:46: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+ctdet/coco_dla| val: [0][1/4952]|Tot: 0:00:01 |ETA: 0:00:00 |loss 2.6827 |hm_loss 2.1024 |wh_loss 4.0121 |off_loss 0.1791 |Data 0.084s(0.100s) |Net 0.726s
+ctdet/coco_dla| val: [0][2/4952]|Tot: 0:00:01 |ETA: 0:00:00 |loss 2.7478 |hm_loss 2.1995 |wh_loss 3.8924 |off_loss 0.1591 |Data 0.004s(0.068s) |Net 0.495s
+ctdet/coco_dla| val: [0][3/4952]|Tot: 0:00:01 |ETA: 0:00:00 |loss 2.7499 |hm_loss 2.1948 |wh_loss 3.8581 |off_loss 0.1693 |Data 0.003s(0.052s) |Net 0.379s
+ctdet/coco_dla| val: [0][4/4952]|Tot: 0:00:01 |ETA: 0:00:00 |loss 2.2470 |hm_loss 1.7582 |wh_loss 3.2114 |off_loss 0.1677 |Data 0.005s(0.042s) |Net 0.313s
+ctdet/coco_dla| val: [0][5/4952]|Tot: 0:00:01 |ETA: 0:00:00 |loss 2.7096 |hm_loss 2.1412 |wh_loss 3.8329 |off_loss 0.1852 |Data 0.005s(0.036s) |Net 0.268s
+ctdet/coco_dla| val: [0][6/4952]|Tot: 0:00:01 |ETA: 0:00:00 |loss 2.6549 |hm_loss 2.1025 |wh_loss 3.6355 |off_loss 0.1889 |Data 0.003s(0.031s) |Net 0.234s
+ctdet/coco_dla| val: [0][7/4952]|Tot: 0:00:01 |ETA: 0:00:00 |loss 2.5442 |hm_loss 1.9870 |wh_loss 3.5391 |off_loss 0.2033 |Data 0.003s(0.028s) |Net 0.211s
+ctdet/coco_dla| val: [0][8/4952]|Tot: 0:00:01 |ETA: 0:00:00 |loss 2.4988 |hm_loss 1.9450 |wh_loss 3.3397 |off_loss 0.2199 |Data 0.003s(0.025s) |Net 0.191s
+ctdet/coco_dla| val: [0][9/4952]|Tot: 0:00:01 |ETA: 0:00:00 |loss 2.2841 |hm_loss 1.7565 |wh_loss 3.0696 |off_loss 0.2207 |Data 0.003s(0.023s) |Net 0.175s
+ctdet/coco_dla| val: [0][10/4952]|Tot: 0:00:01 |ETA: 0:00:00 |loss 2.3236 |hm_loss 1.8118 |wh_loss 2.9038 |off_loss 0.2214 |Data 0.004s(0.021s) |Net 0.163s
+ctdet/coco_dla| val: [0][11/4952]|Tot: 0:00:01 |ETA: 0:00:00 |loss 2.1961 |hm_loss 1.6657 |wh_loss 2.9681 |off_loss 0.2335 |Data 0.016s(0.021s) |Net 0.155s
+ctdet/coco_dla| val: [0][12/4952]|Tot: 0:00:01 |ETA: 0:00:00 |loss 2.2812 |hm_loss 1.7572 |wh_loss 2.8996 |off_loss 0.2340 |Data 0.004s(0.019s) |Net 0.145s
+...
+ctdet/coco_dla| val: [0][4935/4952]|Tot: 0:03:27 |ETA: 0:00:00 |loss 2.6247 |hm_loss 2.0114 |wh_loss 3.7204 |off_loss 0.2412 |Data 0.009s(0.005s) |Net 0.042s
+ctdet/coco_dla| val: [0][4936/4952]|Tot: 0:03:27 |ETA: 0:00:00 |loss 2.6246 |hm_loss 2.0114 |wh_loss 3.7204 |off_loss 0.2412 |Data 0.004s(0.005s) |Net 0.042s
+ctdet/coco_dla| val: [0][4937/4952]|Tot: 0:03:27 |ETA: 0:00:00 |loss 2.6248 |hm_loss 2.0115 |wh_loss 3.7204 |off_loss 0.2412 |Data 0.008s(0.005s) |Net 0.042s
+ctdet/coco_dla| val: [0][4938/4952]|Tot: 0:03:27 |ETA: 0:00:00 |loss 2.6247 |hm_loss 2.0115 |wh_loss 3.7203 |off_loss 0.2412 |Data 0.003s(0.005s) |Net 0.042s
+ctdet/coco_dla| val: [0][4939/4952]|Tot: 0:03:27 |ETA: 0:00:00 |loss 2.6244 |hm_loss 2.0112 |wh_loss 3.7199 |off_loss 0.2412 |Data 0.005s(0.005s) |Net 0.042s
+ctdet/coco_dla| val: [0][4940/4952]|Tot: 0:03:27 |ETA: 0:00:00 |loss 2.6239 |hm_loss 2.0108 |wh_loss 3.7195 |off_loss 0.2412 |Data 0.004s(0.005s) |Net 0.042s
+ctdet/coco_dla| val: [0][4941/4952]|Tot: 0:03:27 |ETA: 0:00:00 |loss 2.6238 |hm_loss 2.0107 |wh_loss 3.7190 |off_loss 0.2412 |Data 0.003s(0.005s) |Net 0.042s
+ctdet/coco_dla| val: [0][4942/4952]|Tot: 0:03:27 |ETA: 0:00:00 |loss 2.6234 |hm_loss 2.0104 |wh_loss 3.7186 |off_loss 0.2412 |Data 0.004s(0.005s) |Net 0.042s
+ctdet/coco_dla| val: [0][4943/4952]|Tot: 0:03:27 |ETA: 0:00:00 |loss 2.6235 |hm_loss 2.0105 |wh_loss 3.7183 |off_loss 0.2412 |Data 0.004s(0.005s) |Net 0.042s
+ctdet/coco_dla| val: [0][4944/4952]|Tot: 0:03:27 |ETA: 0:00:00 |loss 2.6231 |hm_loss 2.0102 |wh_loss 3.7179 |off_loss 0.2412 |Data 0.008s(0.005s) |Net 0.042s
+ctdet/coco_dla| val: [0][4945/4952]|Tot: 0:03:27 |ETA: 0:00:00 |loss 2.6237 |hm_loss 2.0108 |wh_loss 3.7173 |off_loss 0.2412 |Data 0.010s(0.005s) |Net 0.042s
+ctdet/coco_dla| val: [0][4946/4952]|Tot: 0:03:27 |ETA: 0:00:00 |loss 2.6238 |hm_loss 2.0109 |wh_loss 3.7170 |off_loss 0.2412 |Data 0.003s(0.005s) |Net 0.042s
+ctdet/coco_dla| val: [0][4947/4952]|Tot: 0:03:27 |ETA: 0:00:00 |loss 2.6236 |hm_loss 2.0107 |wh_loss 3.7167 |off_loss 0.2412 |Data 0.004s(0.005s) |Net 0.042s
+ctdet/coco_dla| val: [0][4948/4952]|Tot: 0:03:28 |ETA: 0:00:00 |loss 2.6231 |hm_loss 2.0103 |wh_loss 3.7162 |off_loss 0.2412 |Data 0.003s(0.005s) |Net 0.042s
+ctdet/coco_dla| val: [0][4949/4952]|Tot: 0:03:28 |ETA: 0:00:00 |loss 2.6227 |hm_loss 2.0099 |wh_loss 3.7158 |off_loss 0.2412 |Data 0.005s(0.005s) |Net 0.042s
+ctdet/coco_dla| val: [0][4950/4952]|Tot: 0:03:28 |ETA: 0:00:00 |loss 2.6226 |hm_loss 2.0098 |wh_loss 3.7159 |off_loss 0.2412 |Data 0.004s(0.005s) |Net 0.042s
+ctdet/coco_dla| val: [0][4951/4952]|Tot: 0:03:28 |ETA: 0:00:00 |loss 2.6224 |hm_loss 2.0096 |wh_loss 3.7158 |off_loss 0.2412 |Data 0.004s(0.005s) |Net 0.042s
+Loading and preparing results...
+DONE (t=2.00s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=23.22s).
+Accumulating evaluation results...
+DONE (t=9.68s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.428
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.683
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.460
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.068
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.247
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.541
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.372
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.538
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.549
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.180
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.395
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.659
+
+Process finished with exit code 0
+
