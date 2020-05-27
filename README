@@ -1,0 +1,1 @@
+在CenterNet的基础上加入了FSAF（Feature-Selective-Anchor-Free-Module-for-Single-Shot-Object-Detection）的思想，并且在输出检测结果之前用了NMS来过滤。
